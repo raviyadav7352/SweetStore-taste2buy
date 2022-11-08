@@ -1,0 +1,29 @@
+.meal {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 45%;
+  max-height: 100px;
+  padding: 10px;
+  padding-bottom: 1rem;
+  box-shadow: inset 0 0 10px #b7dedaf7;
+}
+.meal:hover{
+  border-bottom: 2px solid #ccc;
+}
+
+.meal h4 {
+  margin: 0 0 0.25rem 0;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #ad5502;
+  font-size: 1.25rem;
+}
