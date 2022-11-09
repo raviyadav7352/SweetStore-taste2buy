@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 5rem;
-    background-color: lightslategrey;
+    background: linear-gradient(33deg, #493da7, #d34545);
     color: white;
     display: flex;
     justify-content: space-between;

@@ -1,6 +1,11 @@
 .card {
   padding: 1rem;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
-  border-radius: 14px;
-  background-image: linear-gradient(317deg, #2c272ccc, #f0f3ec6b);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    border-radius: 14px;
+    background: linear-gradient(180deg, #44524feb, #5d9b93d4);
+  }
+  @media (min-width:200px) and  (max-width:576px){
+    .card {
+      padding: 0;
+    }
   }

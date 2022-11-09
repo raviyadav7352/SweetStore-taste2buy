@@ -6,7 +6,7 @@
   outline-style: solid;
   border-radius: 6px;
   outline-color: lightgrey;
-  padding: 2px;
+  padding:6px;
 }
 
 .form button {
@@ -27,7 +27,8 @@
   background-color: #d0e3e6;
 }
 .form button:active{
-  background-color:lightcoral;
+  background-color:rgb(155, 143, 97);
+  color: #fff;
 }
 .inputbox {
   z-index: 9;
@@ -39,7 +40,7 @@
 }
 
 .form input {
-  width: 40px;
+  width: 50px;
     height: 2rem;
     border: 0;
     border-radius: 6px 0 0 6px;
