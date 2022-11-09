@@ -1,27 +1,36 @@
 .form {
-  text-align: right;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  gap: 0;
+  outline-style: solid;
+  border-radius: 6px;
+  outline-color: lightgrey;
+  padding: 2px;
 }
 
 .form button {
   font: inherit;
-  cursor: pointer;
-  background-color: #8a2b06;
-  border: 1px solid #8a2b06;
-  color: white;
-  padding: 0.25rem 2rem;
-  border-radius: 20px;
-  font-weight: bold;
+    cursor: pointer;
+    background-color: ivory;
+    border: none;
+    color: red;
+    padding: 0.25rem 1rem;
+    border-radius: 0 6px 6px 0;
+    font-weight: bold;
+    height: 2rem;
+    position: relative;
+    width: 5rem;
 }
 
-.form button:hover,
-.form button:active {
-  background-color: #641e03;
-  border-color: #641e03;
+.form button:hover{
+  background-color: #d0e3e6;
+}
+.form button:active{
+  background-color:lightcoral;
 }
 .inputbox {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  z-index: 9;
 }
 
 .form label {
@@ -30,9 +39,12 @@
 }
 
 .form input {
-  width: 3rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font: inherit;
-  padding-left: 0.5rem;
+  width: 40px;
+    height: 2rem;
+    border: 0;
+    border-radius: 6px 0 0 6px;
+    border-right: 3px solid lightgray;
+    font: inherit;
+    padding-left: 0.5rem;
+    outline: none;
 }

@@ -1,6 +1,7 @@
 import React,{Fragment, useState} from "react";
 import Header from "./components/header/Header";
 import Meals from "./components/Meals/Meals";
+import CartProvider from "./components/store/CartProvider";
 import Cart from "./components/UI/Cart";
 
  function App() {
@@ -12,13 +13,13 @@ import Cart from "./components/UI/Cart";
     setModalVisible(false)
   }
   return (
-    <Fragment>
+      <CartProvider>
       {modalVisible && <Cart onHideCart={hideModal}></Cart>}
       <Header onShowCart ={showModal}/>
       <main>
         <Meals/>
       </main>
-    </Fragment>
+      </CartProvider>
     
   );
 }

@@ -9,24 +9,42 @@ const mealData = [
     name: 'Butter Paneer',
     description: 'Natural and veggies',
     price: 220,
+    image:"butterpanner"
   },
   {
     id: 'm2',
     name: 'Veg Pulao',
     description: 'A Gujrat specialty!',
     price: 160,
+    image:"pulao"
   },
   {
     id: 'm3',
     name: 'Veg Burger',
     description: 'Lazeez tasty fill',
-    price: 120,
+    price: 60,
+    image:"burger"
   },
   {
     id: 'm4',
-    name: 'Dark Choco',
+    name: 'Sandwich',
     description: 'Healthy...and green...',
-    price: 180,
+    price: 80,
+    image:"sandwich"
+  },
+  {
+    id: 'm5',
+    name: 'pizza',
+    description: 'fully loades cheese',
+    price: 210,
+    image:"pizza"
+  },
+  {
+    id: 'm6',
+    name: 'pasta',
+    description: 'Healthy...and green...',
+    price: 100,
+    image:"pasta"
   },
 ];
 
@@ -38,6 +56,7 @@ const AvailableMeals = () => {
       id={meal.id}
       name={meal.name}
       price={meal.price}
+      image = {meal.image}
       discript={meal.description}
     />)
   return (
