@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SweetStore-taste2buy/static/css/main.00e6afdc.css",
+    "main.js": "/SweetStore-taste2buy/static/js/main.1988c034.js",
+    "index.html": "/SweetStore-taste2buy/index.html",
+    "main.00e6afdc.css.map": "/SweetStore-taste2buy/static/css/main.00e6afdc.css.map",
+    "main.1988c034.js.map": "/SweetStore-taste2buy/static/js/main.1988c034.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00e6afdc.css",
+    "static/js/main.1988c034.js"
+  ]
+}
