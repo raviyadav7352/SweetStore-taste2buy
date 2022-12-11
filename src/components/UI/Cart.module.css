@@ -2,8 +2,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 20rem;
-  overflow: auto;
+  /* max-height: 20rem;
+  overflow: auto; */
 }
 
 .total {
@@ -31,8 +31,7 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #5a1a01;
-  border-color: #5a1a01;
+  background-color: teal;
   color: white;
 }
 
@@ -43,4 +42,16 @@
 .actions .button {
   background-color: #8a2b06;
   color: white;
+}
+.orderDetails{
+  overflow: auto;
+    max-height: 18rem;
+    padding: 0 30px;
+}
+@media(max-width:576px){
+  .orderDetails{
+  overflow: auto;
+    max-height: 18rem;
+    padding: 0 10px;
+  }
 }

@@ -1,0 +1,118 @@
+.form {
+    width: 100%;
+    text-transform: capitalize;
+}
+
+
+.company-box,
+.namebox,
+.email-box,
+.subject-box,
+.tick-box,
+.button-box {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.inputlabel {
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 70px;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    gap: 6px;
+}
+
+.button-box {
+    width: -webkit-fill-available;
+    justify-content: end;
+}
+
+.btn-box {
+    font: inherit;
+    cursor: pointer;
+    background-color: #d7bebe;
+    border: 0;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+}
+.checkout{
+    background-color: #8a2b06;
+    color: white;
+}
+
+.btn-box:hover {
+    background-color: teal;
+}
+
+.btn-box:active {
+    background-color: brown;
+
+}
+
+.form-main input,
+select {
+    border-radius: 4px;
+    border: 0;
+    height: 30px;
+    padding-left: 10px;
+    width: -webkit-fill-available;
+    background-color: #eee7e7db;
+    outline: none;
+}
+
+.inputbox input:focus{
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.radio-option {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 16px;
+    text-transform: capitalize;
+}
+
+#firstname,
+#areacode {
+    margin-right: 20px;
+}
+
+@media(min-width:100px) and (max-width:600px) {
+    .company-box, .namebox, .email-box, .subject-box, .tick-box, .button-box {
+        display: flex;
+        align-items: unset;
+        font-size: 14px;
+        gap: 10px;
+        margin: 10px 0;
+        flex-direction: column;
+    }
+    .btn-box {
+        margin-left:unset;
+    }
+    .form-main input, select {
+        padding: 8px 10px;
+    }
+    .inputbox {
+        flex-direction: column;
+        gap: 6px;
+    }
+    #firstname, #areacode {
+        margin-right: 0;
+    }
+    .radio-option {
+        gap: 4px;
+        margin-left: 0;
+        height: 7px;
+        width: 26px;
+        margin-bottom: 14px;
+    }
+}

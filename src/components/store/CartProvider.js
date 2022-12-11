@@ -5,10 +5,11 @@ const defaultCartState = {
     items:[],
     totalAmount:0
 }
-const actions ={Add:"Add", Remove:"Remove"};
 const cartReducer = (state, action)=>{
-    if(action.type == actions.Add){
-        const updateTotalAmount = state.totalAmount + action.item.price * action.item.amount;
+
+    if(action.type === "ADD"){
+        const updateTotalAmount = state.totalAmount + action.item.price;
+        console.log("added")
         const presentCartIndex = state.items.findIndex(item=>
            
             item.id === action.item.id
@@ -19,7 +20,7 @@ const cartReducer = (state, action)=>{
         if(presentItem){
             let updatedItem ={
                 ...presentItem,
-                amount:presentItem.amount + action.item.amount
+                amount:presentItem.amount + 1
             };
             updatedItems= [...state.items]
             updatedItems[presentCartIndex]=updatedItem
@@ -29,7 +30,7 @@ const cartReducer = (state, action)=>{
         }
         return{items:updatedItems,totalAmount:updateTotalAmount}
     }
-    if(action.type == actions.Remove){
+    if(action.type == "REMOVE"){
         const presentCartIndex = state.items.findIndex(item=>
            
             item.id === action.id
@@ -40,7 +41,7 @@ const cartReducer = (state, action)=>{
         if(presentItem.amount  === 1){
             updatedItems = state.items.filter((item=>item.id !== action.id))
         }else{
-            const updatedItem = {...presentItem, amount:presentItem.amount -1}
+            const updatedItem = {...presentItem, amount:presentItem.amount - 1}
             updatedItems = [...state.items];
             updatedItems[presentCartIndex] =updatedItem;
         }
@@ -55,10 +56,10 @@ const cartReducer = (state, action)=>{
 const CartProvider = (props) =>{
     const [cartState, dispatchCartAction]= useReducer(cartReducer, defaultCartState)
     const addItemCartHandler =item=>{
-        dispatchCartAction({type:actions.Add, item:item})
+        dispatchCartAction({type:"ADD", item:item})
     }
     const removeItemCartHandler = id =>{
-        dispatchCartAction({type:actions.Remove, id:id})
+        dispatchCartAction({type:"REMOVE", id:id})
     }
 
     const cartContext ={

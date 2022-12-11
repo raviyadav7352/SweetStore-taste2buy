@@ -19,25 +19,19 @@ const MealItem = props => {
 
     return (
         <li className={classes.meal}>
-            <div className='details'>
+            <div className={classes.details}>
                 
                 <div><h4>{props.name}</h4></div>
                 <div className={classes.description}>{props.discript}</div>
                 <div className={classes.price}>{price}</div>
             </div>
             <div className={classes.formbox}>
-                <img src={`images/${props.image}.jpg`} alt="tasty sweet"/>
+                <img  title='add "me" to cart' src={`images/${props.image}.jpg`} alt="tasty sweet"/>
                 <MealItemForm
                     onAddToCart={addToCartHandler}
                     input={
                         {
                             id: props.id,
-                            type: "number",
-                            min: "1",
-                            max: "10",
-                            defaultValue: "1",
-
-
                         }} />
             </div>
         </li>

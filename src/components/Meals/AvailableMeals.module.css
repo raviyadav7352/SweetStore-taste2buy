@@ -13,6 +13,10 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.loading{
+  width: 100%;
+  margin-left: 50%;
+}
 
 @keyframes meals-appear {
   from {
@@ -25,3 +29,13 @@
     transform: translateY(0);
   }
 }
+.customloader {
+  width:30px;
+  height:30px;
+  text-align: center;
+  border-radius:50%;
+  background:conic-gradient(#0000 10%,#766DF4);
+  -webkit-animation:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+}
+@keyframes s3 {to{transform: rotate(1turn)}}
